@@ -15,7 +15,6 @@ def solution(n, left, right):
     return res[left:right+1]
 
 
-
 def solution(n, left, right):
     answer = []
 
