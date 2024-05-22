@@ -5,6 +5,7 @@
 > 코딩 테스트 준비를 위한 알고리즘 스터디입니다.
 
 - 기간: 2024년 4월~
+
 - 정기 회의: 월요일 오후 7시 비대면회의의
 - 참고 사이트: [프로그래머스](https://programmers.co.kr/learn/challenges), [백준](https://www.acmicpc.net/)
 - 언어: 파이썬
