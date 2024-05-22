@@ -37,7 +37,8 @@ def solution(phone_book):
             temp += number
             if temp in hash_map and temp != phone_number:
                 answer = False
-    return answer ```
+    return answer
+```
 
 ## 레벨 3
 ### 부대 복귀
