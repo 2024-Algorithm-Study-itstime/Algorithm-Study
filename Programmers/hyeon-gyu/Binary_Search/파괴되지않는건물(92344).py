@@ -1,24 +1,24 @@
-# def solution(board, skill):
-#     answer = len(board) * len(board[0])
-#     chk = [[0] * len(board[0]) for _ in range(len(board))]
+def solution(board, skill):
+    answer = len(board) * len(board[0])
+    chk = [[0] * len(board[0]) for _ in range(len(board))]
 
-#     #2중루프 안돌고 좌표들에 값을 바꾸는 방법 찾기
-#     for type,r1,c1,r2,c2,degree in skill:
-#         if type == 1:
-#             for i in range(r1,r2+1):
-#                 for j in range(c1,c2+1):
-#                     board[i][j] -= degree
-#                     if board[i][j] <= 0 and chk[i][j] == 0:
-#                         chk[i][j] = 1
-#                         answer -= 1
-#         else :
-#             for i in range(r1,r2+1):
-#                 for j in range(c1,c2+1):
-#                     board[i][j] += degree
-#                     if board[i][j] > 0 and chk[i][j] == 1:
-#                         chk[i][j] = 0
-#                         answer += 1
-#     return answer
+    #2중루프 안돌고 좌표들에 값을 바꾸는 방법 찾기
+    for type,r1,c1,r2,c2,degree in skill:
+        if type == 1:
+            for i in range(r1,r2+1):
+                for j in range(c1,c2+1):
+                    board[i][j] -= degree
+                    if board[i][j] <= 0 and chk[i][j] == 0:
+                        chk[i][j] = 1
+                        answer -= 1
+        else :
+            for i in range(r1,r2+1):
+                for j in range(c1,c2+1):
+                    board[i][j] += degree
+                    if board[i][j] > 0 and chk[i][j] == 1:
+                        chk[i][j] = 0
+                        answer += 1
+    return answer
 
 def solution(board, skill):  
     visited = [[0] * (len(board[0]) + 1) for _ in range(len(board) + 1)]
